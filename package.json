@@ -1,7 +1,7 @@
 {
   "name": "normalize-html-whitespace",
-  "description": "Safely remove repeating whitespace from HTML.",
-  "version": "0.1.0",
+  "description": "Safely remove repeating whitespace from HTML text.",
+  "version": "0.2.0",
   "license": "MIT",
   "homepage": "https://github.com/stevenvachon/normalize-html-whitespace",
   "author": {

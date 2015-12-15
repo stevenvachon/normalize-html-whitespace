@@ -33,6 +33,8 @@ For the sake of completeness, the following characters which are not part of `\s
 
 * `\u200b` or `&#8203;` (zero-width breaking space)
 
+Note: this package does not contain an HTML parser. It is meant to be used on text nodes only.
+
 
 ## Installation
 [Node.js](http://nodejs.org/) `>= 0.10` is required. Type this at the command line:
@@ -46,7 +48,7 @@ npm install normalize-html-whitespace
 var normalizeWhitespace = require("normalize-html-whitespace");
  
 normalizeWhitespace("  foo bar     baz ");
-//=> "foo bar baz" 
+//=> " foo bar baz " 
 ```
 
 
