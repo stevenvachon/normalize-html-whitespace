@@ -37,7 +37,7 @@ Note: this package does not contain an HTML parser. It is meant to be used on te
 
 
 ## Installation
-[Node.js](http://nodejs.org/) `>= 0.10` is required. Type this at the command line:
+[Node.js](http://nodejs.org/) `>= 8` is required. Type this at the command line:
 ```shell
 npm install normalize-html-whitespace
 ```
@@ -45,14 +45,14 @@ npm install normalize-html-whitespace
 
 ## Usage
 ```js
-var normalizeWhitespace = require("normalize-html-whitespace");
- 
-normalizeWhitespace("  foo bar     baz ");
-//=> " foo bar baz " 
+const normalizeWhitespace = require('normalize-html-whitespace');
+
+normalizeWhitespace('  foo bar     baz ');
+//-> ' foo bar baz '
 ```
 
 
 [npm-image]: https://img.shields.io/npm/v/normalize-html-whitespace.svg
-[npm-url]: https://npmjs.org/package/normalize-html-whitespace
+[npm-url]: https://npmjs.com/package/normalize-html-whitespace
 [travis-image]: https://img.shields.io/travis/stevenvachon/normalize-html-whitespace.svg
 [travis-url]: https://travis-ci.org/stevenvachon/normalize-html-whitespace

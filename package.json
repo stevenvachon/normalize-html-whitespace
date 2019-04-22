@@ -1,39 +1,34 @@
 {
   "name": "normalize-html-whitespace",
   "description": "Safely remove repeating whitespace from HTML text.",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://github.com/stevenvachon/normalize-html-whitespace",
-  "author": {
-    "name": "Steven Vachon",
-    "email": "contact@svachon.com",
-    "url": "http://www.svachon.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/stevenvachon/normalize-html-whitespace.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stevenvachon/normalize-html-whitespace/issues"
-  },
+  "author": "Steven Vachon <contact@svachon.com> (https://svachon.com)",
+  "repository": "github:stevenvachon/normalize-html-whitespace",
+  "browser": "index-es5.js",
   "devDependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
   },
   "engines": {
-    "node": ">= 0.10"
+    "node": ">= 8"
   },
   "scripts": {
-    "test": "mocha test --reporter spec --check-leaks --bail"
+    "prepublishOnly": "npm test && babel index.js --out-file=index-es5.js --presets=@babel/env --source-maps",
+    "test": "mocha test.js --check-leaks --bail"
   },
   "files": [
     "index.js",
-    "license"
+    "index-es5.js",
+    "index-es5.js.map"
   ],
   "keywords": [
     "collapse",
-    "condense",
     "compact",
+    "condense",
     "html",
     "minify",
     "normalize",

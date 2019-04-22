@@ -1,14 +1,7 @@
 "use strict";
-var pattern = /[\f\n\r\t\v ]{2,}/g;
-var replacement = " ";
+const pattern = /[\f\n\r\t\v ]{2,}/g;
+const replacement = " ";
 
-
-
-function normalize(str)
-{
-	return str.replace(pattern, replacement);
-}
-
-
+const normalize = str => str.replace(pattern, replacement);
 
 module.exports = normalize;
